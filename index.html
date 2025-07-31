@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla To-Do</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="card">
+        <todo-form>
+            <form>
+                <label>
+                    Enter task
+                    <input name="value" />
+                </label>
+                <button>Add Task</button>
+            </form>
+        </todo-form>
+        <todo-list></todo-list>
+    </div>
+
+    <script type="module" src="js/form.js"></script>
+    <script type="module" src="js/list.js"></script>
+    <script type="module" src="js/item.js"></script>
+</body>
+
+</html>
