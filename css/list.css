@@ -1,0 +1,16 @@
+todo-list {
+    display: grid;
+    grid-template-columns: minmax(20ch, auto) 1fr 1fr 1fr;
+    gap: 5px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Why? */
+    ul, todo-item, li {
+        display: contents;
+    }
+}

@@ -1,3 +1,33 @@
+@import url('./card.css');
+@import url('./list.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    margin: 0;
+    width: 100dw;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    color: light-dark(oklch(21.6% 0.006 56.043, oklch(98.5% 0 0)));
+    background-color: light-dark(oklch(96.7% 0.001 286.375), oklch(27.4% 0.006 286.033));
+}
+
 todo-item[completed="true"] .value {
     text-decoration: line-through;
+}
+
+button {
+    border: 0;
+    padding: .25rem .5rem;
+    background-color: light-dark(oklch(21% 0.006 285.885), oklch(98.5% 0 0));
+    color: light-dark(white, black);
+    border-radius: 5px;
 }
